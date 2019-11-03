@@ -1,0 +1,60 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: url(1.png);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header header" "main main main main";
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-rows: auto;
+    background: navy;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "logo1 noidung noidung noidung logo2";
+}
+
+.logo1 {
+    /* background: lightseagreen; */
+    grid-area: logo1;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.logo2 {
+    /* background: lime; */
+    grid-area: logo2;
+    text-align: center;
+}
+
+.noidung {
+    /* background: slateblue; */
+    grid-area: noidung;
+    text-align: center;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0;
+}
+
+.main {
+    margin-top: 15px;
+    display: grid;
+    grid-area: main;
+    grid-template-rows: 450px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "hienthi bieudo";
+    grid-column-gap: 15px;
+}
+
+.main .hienthi {
+    background: lawngreen;
+    grid-area: hienthi;
+}
+
+.main .bieudo {
+    background: lightcoral;
+    grid-area: bieudo;
+}
