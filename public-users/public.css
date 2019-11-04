@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: url(1.png);
+    background: url(./image/1.png);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "header header header header" "main main main main";
@@ -43,15 +43,59 @@ body {
     margin-top: 15px;
     display: grid;
     grid-area: main;
-    grid-template-rows: 450px;
+    grid-template-rows: 500px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "hienthi bieudo";
     grid-column-gap: 15px;
 }
 
+.realtime {
+    grid-area: realtime;
+}
+
+.suatlieu {
+    grid-area: suatlieu;
+}
+
+.nhietdo {
+    grid-area: nhietdo;
+}
+
+.doam {
+    grid-area: doam;
+}
+
+.bui {
+    grid-area: bui;
+}
+
+.co {
+    grid-area: co;
+}
+
+.ch4 {
+    grid-area: ch4;
+}
+
 .main .hienthi {
     background: lawngreen;
     grid-area: hienthi;
+}
+
+.main .hienthi .container {
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: ".realtime." "suatlieu nhietdo doam" "bui co ch4";
+}
+
+.main .hienthi .container .card {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
+    background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
+    border-radius: 7px;
+    margin: 20px;
+    height: 50px;
 }
 
 .main .bieudo {
