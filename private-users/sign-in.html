@@ -2,15 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign in</title>
-    <!-- import css file -->
-    <link rel="stylesheet" href="sign-in_style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign in</title>
+  <!-- import css file -->
+  <link rel="stylesheet" href="sign-in_style.css">
+  <!-- import javascript file -->
+  <script src="sign-in.js"></script>
 </head>
 
 <body>
+  <div id="prevent">
+    <div class="mini-taskcard">
+      <p>YOU CANNOT ACCESS THIS PAGE!<br>BACKTO HOMEPAGE OR SIGN-IN</p>
+      <button>Back to homepage</button>
+      <button>Sign in</button>
+    </div>
+  </div>
+  <main>
+    <div class="logo">
+      <img class="logo-icon" src="../public-users/image/logoDuAn2-01.png">
+    </div>
+    <div class="title">
+      <h2>Sign in</h2>
+    </div>
+    <div class="validate" id="validateAccount">
+      <img class="warning" src="image/exclamation-mark.svg">
+      <p>Your username or password is incorrect!</p>
+    </div>
+    <div class="username">
+      <p>User name:</p>
+      <input type="text" id="usname">
+    </div>
+    <div class="password">
+      <p>Password:</p>
+      <input type="password" id="pass">
+    </div>
+    <div class="btn">
+      <button onclick="checkAccount()">Sign in</button>
+      <button onclick="checkBack()">Back!</button>
+    </div>
+    <div class="ft">
+      <p>&copy Rewes verson 2019</p>
+    </div>
+  </main>
 
 </body>
 
