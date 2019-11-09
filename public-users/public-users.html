@@ -7,14 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Public Users</title>
     <link rel="stylesheet" href="public.css">
+    <link rel="stylesheet" href="trangchu.css">
+    <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="dongho()">
     <div class="header">
         <div class="logo1">
             <img src="./image/logoDuAn.png" sizes="80px">
         </div>
-        <div class="noidung">Du an quan trac moi truong</div>
+        <div class="noidung">QUAN TRẮC MÔI TRƯỜNG THEO THỜI GIAN THỰC</div>
         <div class="logo2">
             <img src="./image/logoTruong.png">
             <img src="">
@@ -23,57 +25,76 @@
     </div>
     <div class="main">
         <div class="hienthi">
-            <div class="container">
-                <div class="card">
-                    <div class="realtime">
-                        <div class="percent"></div>
-                        <div class="text">thoi gian</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="suatlieu">
-                        <div class="percent"></div>
-                        <div class="text">suat lieu</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="nhietdo">
-                        <div class="percent"></div>
-                        <div class="text">nhiet do</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="doam">
-                        <div class="percent"></div>
-                        <div class="text">do am</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="bui">
-                        <div class="percent"></div>
-                        <div class="text">bui</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="co">
-                        <div class="percent"></div>
-                        <div class="text">CO</div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="ch4">
-                        <div class="percent"></div>
-                        <div class="text">CH4</div>
-                    </div>
+            <!-- <div class="container"> -->
+            <div class="card card1">
+                <div class="thoigian1">
+                    <div class="text">Thời gian thực:</div>
+                    <div id="percent"></div>
                 </div>
             </div>
+            <div class="card suatlieu">
+                <div class="suatlieu1">
+                    <div class="percent"></div>
+                    <div class="text">suat lieu</div>
+                </div>
+            </div>
+            <div class="card nhietdo">
+                <div class="nhietdo1">
+                    <div class="percent"></div>
+                    <div class="text">nhiet do</div>
+                </div>
+            </div>
+            <div class="card doam">
+                <div class="doam1">
+                    <div class="percent"></div>
+                    <div class="text">do am</div>
+                </div>
+            </div>
+            <div class="card bui">
+                <div class="bui1">
+                    <div class="percent"></div>
+                    <div class="text">bui</div>
+                </div>
+            </div>
+            <div class="card co">
+                <div class="co1">
+                    <div class="percent"></div>
+                    <div class="text">CO</div>
+                </div>
+            </div>
+            <div class="card ch4">
+                <div class="ch41">
+                    <div class="percent"></div>
+                    <div class="text">CH4</div>
+                </div>
+            </div>
+            <!-- </div> -->
         </div>
+        <div class="bieudo">BIỂU ĐỒ SỐ LIỆU THEO THỜI GIAN THỰC</div>
+    </div>
+    <!-- thanh menu -------------------------------------------------------->
 
-        <div class="bieudo"></div>
+    <div class="slidebar" id="slidebar">
+        <div class="toggle" onclick="toggle_div()"></div>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Thông tin</a></li>
+            <li><a href="#">Giới thiệu</a></li>
+            <li><a href="#">Liên hệ</a></li>
+            <li><a href="#">Điều khiển</a></li>
+        </ul>
     </div>
-    <div class="navbar"></div>
+    <script type="text/javascript">
+        function toggle_div() {
+            var element = document.getElementById('slidebar');
+            element.classList.toggle('active');
+        }
+    </script>
+
+    <!-- thanh menu -------------------------------------------------------->
+
     <div class="footer"></div>
-    </div>
+
 </body>
 
 </html>

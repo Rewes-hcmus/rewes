@@ -5,13 +5,14 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "header header header header" "main main main main";
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header {
     grid-area: header;
     display: grid;
     grid-template-rows: auto;
-    background: navy;
+    background: rgb(68, 68, 75);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: "logo1 noidung noidung noidung logo2";
 }
@@ -28,15 +29,17 @@ body {
     /* background: lime; */
     grid-area: logo2;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .noidung {
-    /* background: slateblue; */
     grid-area: noidung;
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     line-height: 80px;
     padding: 0;
+    color: #fff;
 }
 
 .main {
@@ -49,8 +52,8 @@ body {
     grid-column-gap: 15px;
 }
 
-.realtime {
-    grid-area: realtime;
+.thoigian {
+    grid-area: thoigian;
 }
 
 .suatlieu {
@@ -80,25 +83,37 @@ body {
 .main .hienthi {
     background: lawngreen;
     grid-area: hienthi;
-}
-
-.main .hienthi .container {
     display: grid;
-    margin-top: 100px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: ".realtime." "suatlieu nhietdo doam" "bui co ch4";
+    grid-template-areas: "thoigian thoigian thoigian" "suatlieu nhietdo doam" "bui co ch4";
 }
 
-.main .hienthi .container .card {
+.main .hienthi .card {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.7);
     background: linear-gradient(0deg, #1b1b1b, #222, #1b1b1b);
     border-radius: 7px;
+    height: 100px;
+    width: auto;
     margin: 20px;
-    height: 50px;
+    color: ivory;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.thoigian1 {
+    color: ivory;
+    text-align: center;
+    line-height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
 }
 
 .main .bieudo {
     background: lightcoral;
     grid-area: bieudo;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
 }
