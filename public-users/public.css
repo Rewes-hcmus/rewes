@@ -4,7 +4,7 @@ body {
     background: url(./image/1.png);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "header header header header" "main main main main";
+    grid-template-areas: "header header header header""main main main main";
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -52,7 +52,7 @@ body {
     grid-column-gap: 15px;
 }
 
-.thoigian {
+.card1 {
     grid-area: thoigian;
 }
 
@@ -85,7 +85,10 @@ body {
     grid-area: hienthi;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "thoigian thoigian thoigian" "suatlieu nhietdo doam" "bui co ch4";
+    grid-template-areas:
+        "thoigian thoigian thoigian"
+        "suatlieu nhietdo doam"
+        "bui co ch4";
 }
 
 .main .hienthi .card {
