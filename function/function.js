@@ -1,4 +1,4 @@
-function dongho() {
+function getRealTime() {
     var percent = new Date();
     var gio = percent.getHours();
     var phut = percent.getMinutes();
@@ -10,6 +10,5 @@ function dongho() {
     if (giay < 10)
         giay = "0" + giay;
     document.getElementById("percent").innerHTML = gio + ":" + phut + ":" + giay;
-    setTimeout("dongho()", 1000);
+    setTimeout("getRealTime()", 1000);
 }
-dongho();

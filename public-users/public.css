@@ -22,6 +22,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
+    margin: auto;
 }
 
 .logo2 {
@@ -30,6 +31,7 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
+    margin: auto;
 }
 
 .noidung {
@@ -51,7 +53,7 @@ body {
     grid-column-gap: 15px;
 }
 
-.thoigian {
+.card1 {
     grid-area: thoigian;
 }
 
