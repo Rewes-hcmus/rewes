@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#prevent {}
+
+#prevent .background {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.205);
+  position: absolute;
+  display: block;
+
+}
+
+#prevent .mini-taskcard {
+  border: 5px solid coral;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  position: absolute;
+  top: 35vh;
+  left: 35vw;
+  width: 30vw;
+  text-align: center;
+}
+
+img {
+  width: 5em;
+  margin-top: 3vh;
+}
+
+#prevent .mini-taskcard p {
+  margin: 5px 5px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white
+}
+
+#prevent .mini-taskcard button {
+  font-size: 1em;
+  font-weight: 500;
+  background-color: coral;
+  color: white;
+  border: none;
+  padding: 1em;
+  width: 40%;
+  box-sizing: border-box;
+  margin: 3%;
+}

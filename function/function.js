@@ -10,5 +10,5 @@ function getRealTime() {
     if (giay < 10)
         giay = "0" + giay;
     document.getElementById("percent").innerHTML = gio + ":" + phut + ":" + giay;
-    setTimeout("getRealTime()", 1000);
 }
+setInterval("getRealTime()", 1000);
